@@ -10,10 +10,10 @@ void free_listint(listint_t *head)
 {
 	listint_t *temp;
 
-	while (!(temp = head))
+	while ((temp = head) != NULL)
 	{
 		head = head->next;
 		free(temp);
 	}
 }
-
+sh: 1: q: not found
